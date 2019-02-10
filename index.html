@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Be a Triathlete.</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Squada+One" rel="stylesheet"><!--Googleフォント-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <p class="logo"><span class="red">Be</span> a Triathlete.</p>
+        <div class="humbergarIcon">
+          <i class="fas fa-bars fa-lg"></i>
+        </div>
+      </div>
+      <nav class="global-navigation">
+        <ul>
+          <li> <a href="#">ABOUT</a> </li>
+          <li> <a href="#">TYPE</a> </li>
+          <li> <a href="#">HISTORY</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-image">
+      <div class="blackFilter">
+        <h2><span class="red">Be</span> a Triathlete.</h2>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="swim content-wrapeer">
+        <div class="swimImage">
+          <div class="sTitle title">
+            <h3>SWIM</h3>
+          </div>
+          <img src="img/swim.jpg" alt="swim">
+          <p class=jaText>泳ぐ。</p>
+        </div>
+        <p class="texts">海、湖、池、場所は様々。自然との闘いにもなる。<br>コースロープの無いコースを大勢の選手達と一緒に泳ぐ。「バトル」と呼ばれるポジションの取り合いが繰り広げらる。</p>
+      </div>
+      <div class="bike content-wrapeer">
+        <div class="bikeImage">
+          <div class="bTitle title">
+            <h3>BIKE</h3>
+          </div>
+          <img src="img/bike.jpg" alt="bike">
+          <p class=jaText>漕ぐ。</p>
+        </div>
+        <p class="texts">レースの半分の時間を占めるバイク。<br>次のランのために脚を残すのか。それとも攻めるのか。レースを戦略する要となる種目になる。とにかくペダルを回せ。</p>
+      </div>
+      <div class="run content-wrapeer">
+        <div class="runImage">
+          <div class="rTitle title">
+            <h3>RUN</h3>
+          </div>
+          <img src="img/run.jpeg" alt="run">
+          <p class=jaText>走る。</p>
+        </div>
+        <p class="texts">最終種目であるラン。バイクで疲弊した脚は悲鳴をあげている。<br>ゴールした後の栄光を手に入れるために鞭を打つ。</p>
+      </div>
+    </section>
+
+    <section class="type">
+      <div class="blackFilter">
+        <h2>TYPE</h2>
+        <table>
+          <tr>
+            <th></th>
+            <th>SWIM</th>
+            <th>BIKE</th>
+            <th>RUN</th>
+          </tr>
+          <tr>
+            <th class="left-text">アイアンマン</th>
+            <td>3.8km</td>
+            <td>180km</td>
+            <td>42km</td>
+          </tr>
+          <tr>
+            <th class="left-text">ミドルディスタンス</th>
+            <td>2km</td>
+            <td>90km</td>
+            <td>21km</td>
+          </tr>
+          <tr>
+            <th class="left-text">オリンピックディスタンス</th>
+            <td>1.5km</td>
+            <td>40km</td>
+            <td>10km</td>
+          </tr>
+          <tr>
+            <th class="left-text">スプリントディスタンス</th>
+            <td>0.75km</td>
+            <td>20km</td>
+            <td>5km</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="entry">
+      <h2>Entry</h2>
+      <div class="serchBox">
+        <section class="serch-left">
+          <h3>大会名・条件から探す</h3>
+          <form class="" action="index.html" method="post">
+            <table>
+              <tr>
+                <th>大会名</th>
+                <td><input type="text" name="" value=""></td>
+              </tr>
+              <tr>
+                <th>開催月</th>
+                <td>
+                  <select class="" name="">
+                    <option value="">1月</option>
+                    <option value="">2月</option>
+                    <option value="">3月</option>
+                    <option value="">4月</option>
+                    <option value="">5月</option>
+                    <option value="">6月</option>
+                    <option value="">7月</option>
+                    <option value="">8月</option>
+                    <option value="">9月</option>
+                    <option value="">10月</option>
+                    <option value="">11月</option>
+                    <option value="">12月</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>開催地</th>
+                <td><input type="text" name="" value=""></td>
+              </tr>
+              <tr>
+                <th>種目</th>
+                <td>
+                  <ul>
+                    <li>
+                      <input id="short" type="radio" name="type" value="">
+                      <label for="short">ショートディスタンス</label>
+                    </li>
+                    <li>
+                      <input id="olympic" type="radio" name="type" value="">
+                      <label for="olympic">オリンピックディスタンス</label>
+                    </li>
+                    <li>
+                      <input id="midle" type="radio" name="type" value="">
+                      <label for="midle">ミドルディスタンス</label>
+                    </li>
+                    <li>
+                      <input id="ironman" type="radio" name="type" value="">
+                      <label for="ironman">アイアンマン</label>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <input id="submit" type="submit" name="" value="検索">
+          </form>
+        </section>
+
+        <section class="serch-right">
+          <h3>エリアから探す</h3>
+          <div class="area-wrapper">
+            <div class="touhoku area">
+              <p>北海道・東北</p>
+            </div>
+            <div class="kanto area">
+              <p>関東</p>
+            </div>
+            <div class="tyubu area">
+              <p>中部</p>
+            </div>
+            <div class="kansai area">
+              <p>関西</p>
+            </div>
+            <div class="tyuugoku area">
+              <p>中国・近畿</p>
+            </div>
+            <div class="kyuusyu area">
+              <p>九州・沖縄</p>
+            </div>
+            <div class="overseas area">
+              <p>海外</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+    </section>
+
+
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
